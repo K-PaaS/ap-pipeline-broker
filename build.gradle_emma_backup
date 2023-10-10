@@ -24,7 +24,7 @@ apply plugin: 'maven'
 ext {
   springBootCfServiceBrokerVersion = "2.4.0"
   springBootVersion = '1.3.0.BUILD-SNAPSHOT'
-  baseName = 'paas-ta-service-java-broker-devops'
+  baseName = 'ap-service-java-broker-devops'
   version =  '2.4'
   
   

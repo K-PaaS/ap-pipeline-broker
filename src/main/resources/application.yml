@@ -7,7 +7,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/broker?autoReconnect=true&useUnicode=true&characterEncoding=utf8
     username: root
-    password: "!paas_ta202"
+    password: "!k_paas202"
   jpa:
     hibernate:
       ddl-auto: none
@@ -22,7 +22,7 @@ logging:
         openpaas:
           servicebroker:
             controller: INFO
-        paasta:
+        ap:
           servicebroker:
             deliverypipeline:
               service: INFO
@@ -32,7 +32,7 @@ service:
     url: http://115.68.46.214:8080/dashboard/[SUID]/
 
 
-paasta:
+ap:
   delivery:
     pipeline:
       api:
@@ -51,7 +51,7 @@ ci:
 serviceDefinition:
   id: YOUR_PLAN_ID #ex) abcdefgh-abcd-abcd-abcd-abcdefghijkl
   name: delivery-pipeline-v2
-  desc: "A paasta source control service for application development.provision parameters : parameters {owner : owner}"
+  desc: "A application platform source control service for application development.provision parameters : parameters {owner : owner}"
   bindable: false
   planupdatable: false
   plan1:

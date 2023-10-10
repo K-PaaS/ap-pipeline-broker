@@ -27,7 +27,7 @@ ext {
 }
 
 jar{
-    baseName = 'delivery-pipeline-service-broker'
+    baseName = 'ap-pipeline-broker'
 }
 
 repositories {
@@ -47,7 +47,8 @@ configurations {
 
 dependencies {
     
-    compile(name: 'openpaas-service-java-broker')
+    //compile(name: 'openpaas-service-java-broker')
+    compile(name: 'ap-service-broker-1.0.0.1')
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-security")
@@ -78,5 +79,5 @@ test {
 }
 
 springBoot {
-    mainClass = "org.paasta.servicebroker.deliverypipeline.config.Application"
+    mainClass = "org.servicebroker.deliverypipeline.config.Application"
 }
